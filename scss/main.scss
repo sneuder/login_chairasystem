@@ -18,11 +18,25 @@ body {
     width: 33%;
 }
 
+.section-header {
+    display: flex;
+
+    &__title {
+        order: 1;
+    }
+
+    &__logo {
+        order: 0;
+    }
+}
+
 .section-form {
     @include flexVertical;
 
     &__textbox {
+        align-self: flex-end;
         border: solid 1px;
         border-radius: 3px;
+        width: 70%;
     }
 }
