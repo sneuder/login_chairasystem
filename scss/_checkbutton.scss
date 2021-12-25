@@ -1,0 +1,41 @@
+@mixin button {
+    
+    &__session {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__dontsession {
+        @include flexCenter;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $color-header;
+        border-radius: 3px;
+        outline: 0;
+        background: $background-color;
+        margin-right: 15px;
+        cursor: pointer;
+        transition: background 0.3s, border 0.3s;
+        transition-timing-function: ease;
+    }
+
+    &__dontsession::after {
+        content: "\f00c";
+        font-family: "Font Awesome 5 Free";
+        color: $background-color;
+        font-weight: 900;
+        font-size: 11px;
+        display: none;
+    }
+
+    &__dontsession:checked {
+        background: $second-background-color;
+        border: $second-background-color;
+    }
+
+    &__dontsession:checked:after {
+        display: block;
+    }
+}
