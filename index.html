@@ -13,11 +13,11 @@
             <div class="card-login">
                 <div class="section-header">
                     <h1 class="section-header__title">Sistema Misional Chair&#225</h1>
-                    <img class="section-header__logo" src="img/logo_universidad.svg" alt="Logo Universidad de la Amazonia">
+                    <img class="section-header__logo" src="img/logo_universidad.png" alt="Logo Universidad de la Amazonia">
                 </div>
                 <div class="form">
-                    <form class="section-form">
-                        <label for="user">
+                    <form class="section-form" >
+                        <label for="user" class="section-form__label">
                             <input
                                 type="text"
                                 class="section-form__textbox"
@@ -26,7 +26,7 @@
                                 placeholder="Usuario"
                                 required>
                         </label>
-                        <label for="password">
+                        <label for="password" class="section-form__label">
                             <input
                                 type="password"
                                 class="section-form__textbox"
@@ -35,11 +35,12 @@
                                 placeholder="Contraseña"
                                 required>
                         </label>
-                        <label for="submit-bottom">
-                            <input type="submit" class="section-form__submit" id="submit-bottom">
-                        </label>
-                        <label for="dontclose_session">
+                        <label for="dontclose_session" class="section-form__session">
                             <input type="checkbox" class="section-form__dontsession" id="dontclose_session">
+                            <p class="section-form__sessiontext">No cerrar sesi&#243;n</p>
+                        </label>
+                        <label for="submit-bottom" class="section-form__label">
+                            <input type="submit" class="section-form__submit" id="submit-bottom" value="Entrar">
                         </label>
                     </form>
                 </div>
@@ -55,10 +56,7 @@
                     </p>
                 </div>
                 <div class="section-footer">
-                    <p class="section-footer__text">Copyright &copy; 2022</p>
-                    <p class="section-footer__text">Universidad de la Amazonia</p>
-                    <p class="section-footer__text">Departamento de tecnologías de la información</p> 
-                    <p class="section-footer__text">Área de investigación y desarrollo.</p>
+                    <p class="section-footer__text">Copyright &copy; 2022. Universidad de la Amazonia. Departamento de tecnologías de la información. Área de investigación y desarrollo</p>
                 </div>
             </div>
         </div>
