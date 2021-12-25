@@ -1,0 +1,3 @@
+@function setLogo($height-width-circle){
+    @return($height-width-circle / -2);
+}
