@@ -5,6 +5,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">        <meta charset="utf-8">
         <!--Linked styles-->
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/all.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
         <title>Chari&#225;</title>
     </head>
@@ -19,30 +20,41 @@
                 </div>
                 <div class="form">
                     <form class="section-form" >
-                        <label for="user" class="section-form__label">
+                        <label for="user" class="label-container">
+                            <figure class="icon-container">
+                                <i class="fas fa-user icon-container__icon" id="icon1"></i>
+                            </figure>
+                            
                             <input
                                 type="text"
-                                class="section-form__textbox"
+                                class="label-container__textbox"
                                 id="user"
                                 name="login-inf"
                                 placeholder="Usuario"
-                                required>
+                                required
+                                onfocus="focus_iconColor1()"
+                                onfocusout="focusout_iconColor1()">
                         </label>
-                        <label for="password" class="section-form__label">
+                        <label for="password" class="label-container">
+                            <figure class="icon-container">
+                                <i class="fas fa-lock icon-container__icon" id="icon2"></i>
+                            </figure>
                             <input
                                 type="password"
-                                class="section-form__textbox"
+                                class="label-container__textbox"
                                 id="password" 
                                 name="login-inf" 
                                 placeholder="Contraseña"
-                                required>
+                                required
+                                onfocus="focus_iconColor2()"
+                                onfocusout="focusout_iconColor2()">
                         </label>
                         <label for="dontclose_session" class="section-form__session">
                             <input type="checkbox" class="section-form__dontsession" id="dontclose_session">
                             <p class="section-form__sessiontext">No cerrar sesi&#243;n</p>
                         </label>
-                        <label for="submit-bottom" class="section-form__label">
-                            <input type="submit" class="section-form__submit" id="submit-bottom" value="Entrar">
+                        <label for="submit-button" class="label-container">
+                            <input type="submit" class="label-container__submit" id="submit-button" value="Entrar">
                         </label>
                     </form>
                 </div>
@@ -62,5 +74,6 @@
                 </div>
             </div>
         </div>
+        <script src="scss/functions_js/changeStyles.js"></script>
     </body>
 </html>

@@ -1,5 +1,5 @@
 @mixin button {
-    
+
     &__session {
         display: flex;
         justify-content: flex-start;
@@ -11,7 +11,7 @@
         appearance: none;
         width: 20px;
         height: 20px;
-        border: 1px solid $color-header;
+        border: 1px solid $grey-color;
         border-radius: 3px;
         outline: 0;
         background: $background-color;
@@ -28,6 +28,8 @@
         font-weight: 900;
         font-size: 11px;
         display: none;
+        transition: display 0.3s;
+        transition-timing-function: ease;
     }
 
     &__dontsession:checked {
@@ -35,7 +37,7 @@
         border: $second-background-color;
     }
 
-    &__dontsession:checked:after {
+    &__dontsession:checked::after {
         display: block;
     }
 }
