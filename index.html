@@ -2,7 +2,8 @@
 <html lang="en">
     <head>
         <!--Fonts-->
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
         <!--Linked styles-->
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/all.css">
@@ -12,19 +13,21 @@
     <body>
         <div class="main-box">
             <div class="card-login">
+                <!--Header-->
                 <div class="section-header">
                     <h1 class="section-header__title">Sistema Misional Chair&#225</h1>
                     <figure class="logo-container">
                         <img class="logo-container__logo" src="img/logo_universidad.png" alt="Logo Universidad de la Amazonia">
                     </figure>
                 </div>
+                <!--Form section-->
                 <div class="form">
                     <form class="section-form" >
+                        <!--Text field-->
                         <label for="user" class="label-container">
                             <figure class="icon-container">
                                 <i class="fas fa-user icon-container__icon" id="icon1"></i>
                             </figure>
-                            
                             <input
                                 type="text"
                                 class="label-container__textbox"
@@ -35,6 +38,7 @@
                                 onfocus="focus_iconColor1()"
                                 onfocusout="focusout_iconColor1()">
                         </label>
+                        <!--Password field-->
                         <label for="password" class="label-container">
                             <figure class="icon-container">
                                 <i class="fas fa-lock icon-container__icon" id="icon2"></i>
@@ -49,15 +53,18 @@
                                 onfocus="focus_iconColor2()"
                                 onfocusout="focusout_iconColor2()">
                         </label>
+                        <!--Checkbox-->
                         <label for="dontclose_session" class="section-form__session">
                             <input type="checkbox" class="section-form__dontsession" id="dontclose_session">
                             <p class="section-form__sessiontext">No cerrar sesi&#243;n</p>
                         </label>
+                        <!--Submit button-->
                         <label for="submit-button" class="label-container">
                             <input type="submit" class="label-container__submit" id="submit-button" value="Entrar">
                         </label>
                     </form>
                 </div>
+                <!--Links-->
                 <div class="questions-links">
                     <p class="questions-links__text">
                         <a href="" class="questions-links__hyper">¿Olvid&#243; su nombre de usuario?</a>
@@ -69,6 +76,7 @@
                         <a href="" class="questions-links__hyper">¿Necesita ayuda?</a>
                     </p>
                 </div>
+                <!--Footer-->
                 <div class="section-footer">
                     <p class="section-footer__text">Copyright &copy; 2022. Universidad de la Amazonia. Departamento de tecnologías de la información. Área de investigación y desarrollo</p>
                 </div>
