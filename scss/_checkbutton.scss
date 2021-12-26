@@ -21,6 +21,10 @@
         transition-timing-function: ease;
     }
 
+    &__dontsession:hover {
+        border: 1px solid $second-background-color;
+    }
+
     &__dontsession::after {
         content: "\f00c";
         font-family: "Font Awesome 5 Free";
@@ -39,5 +43,9 @@
 
     &__dontsession:checked::after {
         display: block;
+    }
+
+    &__sessiontext:hover {
+        cursor: pointer;
     }
 }
