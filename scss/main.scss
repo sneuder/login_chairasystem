@@ -81,9 +81,7 @@ body {
         border-color: $grey-color;
         border-width: 1px 1px 2px 1px;
         border-radius: 3px;
-        transition-duration: 0.3s;
-        transition-timing-function: ease;
-        transition-property: border-color;
+        @include transitions;
     }
     
     &__submit {
@@ -92,7 +90,7 @@ body {
         cursor: pointer;
         border-radius: 3px;
         color: $background-color;
-        transition: background 0.3s ease;
+        @include transitions;
         background: $second-background-color;
     }
 
@@ -110,7 +108,7 @@ body {
     &__icon{
         font-size: 20px;
         color: $grey-color;
-        transition: color 0.3s ease, font-size 0.3s ease;
+        @include transitions;
     }
 }
 
