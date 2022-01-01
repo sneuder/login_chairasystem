@@ -1,0 +1,44 @@
+@import '../variables';
+@import '../resused';
+@import '../functions';
+
+@media screen and (max-width: 640px){
+
+    .main-box {
+        width: 80%;
+        padding-top: calc(20vw + 4.5em);
+        margin-bottom: 4.5em;
+    }
+
+    .section-header {
+        font-size: 0.7rem;
+    }
+
+    .logo-container {
+        @include flexCenter;
+        width: 30vw;
+        height: 30vw;
+        position: absolute;
+        top: setLogo(30vw);
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px){
+
+    .main-box {
+        width: 55%;
+    }
+
+    .section-header {
+        padding-top: 2em;
+        font-size: 0.8rem;
+    }
+
+    .logo-container {
+        @include flexCenter;
+        width: 20vw;
+        height: 20vw;
+        position: absolute;
+        top: setLogo(20vw);
+    }
+}

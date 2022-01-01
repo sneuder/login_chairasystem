@@ -11,8 +11,24 @@
 /*For elements' colors*/
 /*Shadow of boxes*/
 /*Heigh and width of logo container*/
+html {
+  font-size: 16px;
+}
+
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 100vh;
   background-image: url("../img/background_img.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -26,9 +42,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 33%;
   height: 100vh;
-  padding-top: 30px;
+  padding: 80px 0 30px 0;
 }
 
 .card-login {
@@ -45,7 +61,7 @@ body {
           align-items: center;
   background: #ffffff;
   border-radius: 4px;
-  width: 33%;
+  width: 100%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
@@ -61,7 +77,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 70px 0 0 0;
+  margin: 4.5em 0 0 0;
   width: 87%;
 }
 
@@ -198,12 +214,8 @@ body {
   border-color: #d2d2d2;
   border-width: 1px 1px 2px 1px;
   border-radius: 3px;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition-property: border-color;
-  transition-property: border-color;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .label-container__submit {
@@ -212,8 +224,8 @@ body {
   cursor: pointer;
   border-radius: 3px;
   color: #ffffff;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   background: #009a25;
 }
 
@@ -239,8 +251,8 @@ body {
 .icon-container__icon {
   font-size: 20px;
   color: #d2d2d2;
-  -webkit-transition: color 0.3s ease, font-size 0.3s ease;
-  transition: color 0.3s ease, font-size 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .questions-links {

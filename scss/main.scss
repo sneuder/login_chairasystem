@@ -4,16 +4,24 @@
 @import './functions';
 @import './checkbutton';
 
+html {
+    font-size: 16px;
+}
+
 body {
+    @include flexCenter;
+    width: 100%;
+    min-height: 100vh;
     background-image: url("../img/background_img.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .main-box {
     @include flexCenter;
-    width: 100%;
+    width: 33%;
     height: 100vh;
-    padding-top: 30px;
+    padding: 80px 0 30px 0;
 }
 
 .card-login {
@@ -22,14 +30,14 @@ body {
     align-items: center;
     background: $background-color;
     border-radius: 4px;
-    width: 33%;
+    width: 100%;
     box-shadow: $shadow-box;
 }
 
 .section-header {
     @include flexVertical;
     align-items: center;
-    margin: 70px 0 0 0;
+    margin: 4.5em 0 0 0;
     width: $width-sections;
 
     &__title {

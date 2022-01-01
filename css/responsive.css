@@ -1,0 +1,54 @@
+/*For elements' colors*/
+/*Shadow of boxes*/
+/*Heigh and width of logo container*/
+@media screen and (max-width: 640px) {
+  .main-box {
+    width: 80%;
+    padding-top: calc(20vw + 4.5em);
+    margin-bottom: 4.5em;
+  }
+  .section-header {
+    font-size: 0.7rem;
+  }
+  .logo-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+    top: -15vw;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  .main-box {
+    width: 55%;
+  }
+  .section-header {
+    padding-top: 2em;
+    font-size: 0.8rem;
+  }
+  .logo-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: -10vw;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
